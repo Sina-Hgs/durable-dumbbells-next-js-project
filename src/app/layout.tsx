@@ -1,22 +1,28 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Barlow_Condensed } from "next/font/google";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const BarlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: "Durable Dumbbells",
   description: "A Next JS Product Landing Page",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout() {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-neutral-200">
+      <body className={BarlowCondensed.className}>
+        <Navbar />
+        <Footer />
+      </body>
     </html>
   );
 }
