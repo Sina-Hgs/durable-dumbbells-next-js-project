@@ -9,7 +9,7 @@ const Navbar = () => {
   const [display, setDisplay] = useState("hidden");
 
   return (
-    <nav className="w-screen h-[70px] bg-black bg-opacity-90 text-white border-b border-white flex justify-between items-center px-4 max-md:px-2">
+    <nav className="absolute z-50 w-screen h-[70px] bg-black bg-opacity-90 text-white border-b border-white flex justify-between items-center px-4 max-md:px-2">
       <Link href={""} className="flex flex-row items-center">
         <Image
           src={"logo.svg"}
@@ -55,7 +55,7 @@ const Navbar = () => {
       </button>
       <div
         id="mobile-nav"
-        className={`text-xl absolute z-50 right-0 top-[70px] bottom-0 w-40 pl-5 ${display} flex-col justify-start items-start bg-black bg-opacity-90 border-b border-white`}
+        className={`text-xl w-40 h-[85vh] absolute top-[70px] right-0 pl-5 ${display} flex-col justify-start items-start bg-black bg-opacity-90 border-b border-white`}
       >
         <Link
           href={"#"}
@@ -70,7 +70,7 @@ const Navbar = () => {
           Our Product
         </Link>
         <Link href={"#"}>
-          <button className="py-4 uppercase font-bold text-2xl text-red-600 underline-offset-4 active:underline active:tracking-[6px] active:italic transition-all">
+          <button className="py-4 uppercase font-bold text-2xl text-red-600 underline-offset-4 active:underline active:tracking-[6px] active:italic transition-all animate-pulse">
             Shop
           </button>
         </Link>

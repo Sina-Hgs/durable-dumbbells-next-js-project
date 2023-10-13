@@ -13,6 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      // that is animation class
+      animation: {
+        fade: "fadeOut 0.7s ease-in-out",
+      },
+
+      // that is actual animation
+      keyframes: () => ({
+        fadeOut: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "100%" },
+        },
+      }),
     },
   },
   plugins: [],

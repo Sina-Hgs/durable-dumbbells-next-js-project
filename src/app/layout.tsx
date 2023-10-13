@@ -16,12 +16,17 @@ export const metadata: Metadata = {
   description: "A Next JS Product Landing Page",
 };
 
-export default function RootLayout() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className="bg-neutral-200">
       <body className={BarlowCondensed.className}>
         <Navbar />
-        <Footer />
+        {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );
