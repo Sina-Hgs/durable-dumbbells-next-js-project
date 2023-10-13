@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const [display, setDisplay] = useState("hidden");
+
   return (
     <nav className="w-screen h-[70px] bg-black bg-opacity-90 text-white border-b border-white flex justify-between items-center px-4 max-md:px-2">
       <Link href={""} className="flex flex-row items-center">
@@ -40,12 +45,17 @@ const Navbar = () => {
       </div>
 
       {/* MOBILE NAV */}
-      <button className="lg:hidden text-2xl">
+      <button
+        className="lg:hidden text-2xl"
+        onClick={() =>
+          display == "hidden" ? setDisplay("flex") : setDisplay("hidden")
+        }
+      >
         <FaBars />
       </button>
       <div
         id="mobile-nav"
-        className="text-xl absolute z-50 right-0 top-[70px] bottom-0 w-40 pl-5 flex flex-col justify-start items-start bg-black bg-opacity-90 border-b border-white"
+        className={`text-xl absolute z-50 right-0 top-[70px] bottom-0 w-40 pl-5 ${display} flex-col justify-start items-start bg-black bg-opacity-90 border-b border-white`}
       >
         <Link
           href={"#"}
