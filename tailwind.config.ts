@@ -16,7 +16,7 @@ const config: Config = {
 
       // that is animation class
       animation: {
-        fade: "fadeOut 0.7s ease-in-out",
+        fade: "fadeOut 1.5s ease-in-out",
       },
 
       // that is actual animation
