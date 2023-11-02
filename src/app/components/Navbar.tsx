@@ -18,7 +18,7 @@ const Navbar = () => {
           height={45}
           className="transition-all hover:rotate-45 max-sm:w-7"
         />
-        <h1 className="text-3xl uppercase font-bold italic tracking-widest ml-3 hover:tracking-[4.60px] hover:bg-white hover:px-4 hover:text-black transition-all max-sm:text-lg">
+        <h1 className="text-3xl uppercase font-bold italic tracking-widest ml-3 hover:tracking-[4.60px] hover:bg-white hover:px-4 hover:text-black transition-all max-md:text-2xl max-sm:text-lg">
           Durable Dumbbells
         </h1>
       </Link>

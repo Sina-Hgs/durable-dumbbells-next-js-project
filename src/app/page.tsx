@@ -10,7 +10,7 @@ export default function Home() {
         width={1440}
         height={647}
         priority={true}
-        className="max-md:hidden"
+        className="max-sm:hidden"
         style={{
           width: "100vw",
           height: "100vh",
@@ -26,13 +26,12 @@ export default function Home() {
         width={430}
         height={863}
         priority={true}
-        className="md:hidden"
+        className="sm:hidden"
         style={{
           position: "absolute",
           width: "100vw",
-          height: "100vh",
           top: "70px",
-          objectFit: "cover",
+          objectFit: "fill",
         }}
       />
 
