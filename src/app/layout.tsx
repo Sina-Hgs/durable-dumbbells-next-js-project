@@ -22,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-neutral-200">
-      <body className={BarlowCondensed.className}>
+    <html lang="en" className="bg-neutral-200 scroll-smooth">
+      <body className={`${BarlowCondensed.className}`}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

@@ -7,16 +7,10 @@ export default function Home() {
       <Image
         src={`/images/hero.png`}
         alt="Product Image"
-        width={1440}
+        width={1400}
         height={647}
         priority={true}
-        className="max-sm:hidden"
-        style={{
-          width: "100vw",
-          height: "100vh",
-          top: "0",
-          objectFit: "cover",
-        }}
+        className="max-sm:hidden absolute bg-cover w-screen max-xl:top-[70px]"
       />
 
       {/* MOBILE HERO */}

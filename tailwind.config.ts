@@ -14,12 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
-      // that is animation class
+      // that is the animation class
       animation: {
         fade: "fadeOut 1.5s ease-in-out",
       },
 
-      // that is actual animation
+      // that is the actual animation
       keyframes: () => ({
         fadeOut: {
           "0%": { opacity: "0" },
