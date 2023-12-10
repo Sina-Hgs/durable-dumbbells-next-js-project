@@ -10,7 +10,8 @@ const Navbar = () => {
   const [display, setDisplay] = useState("hidden");
 
   return (
-    <nav className="absolute z-50 w-screen h-[70px] bg-black bg-opacity-90 underline-offset-8 text-white border-b border-white flex justify-between items-center px-4 max-md:px-2 max-xl:bg-opacity-100">
+    <nav className="fixed z-50 w-screen h-[70px] bg-black bg-opacity-90 underline-offset-8 text-white border-b border-white flex justify-between items-center px-4 max-md:px-2 max-xl:bg-opacity-100">
+      {/* SITE LOGO AND BRANDNAME */}
       <Link href={""} className="flex flex-row items-center">
         <Image
           src={"logo.svg"}
@@ -56,7 +57,7 @@ const Navbar = () => {
       </button>
       <div
         id="mobile-nav"
-        className={`text-xl w-40 h-[85vh] absolute top-[70px] right-0 px-5 ${display} flex-col justify-start  bg-black bg-opacity-90 border-b border-white`}
+        className={`text-xl w-40 h-screen fixed top-[70px] right-0 px-5 ${display} lg:hidden flex-col justify-start  bg-black bg-opacity-90 border-b border-white`}
       >
         <Link
           href={"#"}
@@ -71,7 +72,7 @@ const Navbar = () => {
           Our Product
         </Link>
         <Link href={"#"}>
-          <button className="my-4 py-1 w-full uppercase animate-fade font-bold text-2xl bg-red-800 hover:bg-white hover:text-black hover:tracking-[4.60px] transition-all">
+          <button className="my-4 py-1 w-full uppercase font-bold text-2xl bg-red-800 hover:bg-white hover:text-black hover:tracking-[4.60px] transition-all">
             Shop
           </button>
         </Link>

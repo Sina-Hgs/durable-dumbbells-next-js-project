@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${BarlowCondensed.className}`}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
