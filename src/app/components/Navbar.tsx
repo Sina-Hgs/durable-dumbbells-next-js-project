@@ -18,8 +18,7 @@ const Navbar = () => {
           alt="site logo"
           width={45}
           height={45}
-          className="max-sm:w-7 
-          "
+          className="max-sm:w-7 ring-white rounded-full ring-offset-1 hover:p-1 hover:ring-1 transition-all"
         />
         <h1 className="text-3xl uppercase font-bold italic tracking-widest ml-3 hover:tracking-[4.60px] hover:bg-white hover:px-4 hover:text-black transition-all max-md:text-2xl max-sm:text-lg">
           Durable Dumbbells

@@ -27,7 +27,6 @@ export default function Home() {
           className="max-lg:hidden -z-50 bg-cover w-full max-xl:top-[70px]"
         />
       </div>
-
       {/* MOBILE HERO */}
       <Image
         src={`/images/hero-for-mobile.png`}
@@ -36,13 +35,10 @@ export default function Home() {
         height={863}
         priority={true}
         className="lg:hidden absolute -z-50 bg-cover w-full max-xl:top-[70px]"
-        // style={{
-        //   position: "absolute",
-        //   width: "100vw",
-        //   top: "70px",
-        //   objectFit: "fill",
-        // }}
       />
+      <span className="flex justify-center p-5 text-center text-2xl">
+        WORK IN PROGRESS! &#128679;
+      </span>
     </main>
   );
 }
