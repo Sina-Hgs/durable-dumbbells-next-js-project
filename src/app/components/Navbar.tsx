@@ -10,7 +10,7 @@ const Navbar = () => {
   const [display, setDisplay] = useState("hidden");
 
   return (
-    <nav className="fixed z-50 w-screen h-[70px] bg-black bg-opacity-90 underline-offset-8 text-white border-b border-white flex justify-between items-center px-4 max-md:px-2 max-xl:bg-opacity-100">
+    <nav className="fixed z-50 w-screen h-[70px] bg-black bg-opacity-80 underline-offset-8 text-white border-b border-white flex justify-between items-center px-4 max-lg:px-2 max-lg:h-[55px] max-lg:bg-opacity-100">
       {/* SITE LOGO AND BRANDNAME */}
       <Link href={""} className="flex flex-row items-center">
         <Image
@@ -20,7 +20,7 @@ const Navbar = () => {
           height={45}
           className="max-sm:w-7 ring-white rounded-full ring-offset-1 hover:p-1 hover:ring-1 transition-all"
         />
-        <h1 className="text-3xl uppercase font-bold italic tracking-widest ml-3 hover:tracking-[4.60px] hover:bg-white hover:px-4 hover:text-black transition-all max-md:text-2xl max-sm:text-lg">
+        <h1 className="text-3xl uppercase font-bold italic tracking-widest ml-3 hover:tracking-[4.60px] hover:bg-white hover:px-4 hover:text-black transition-all max-lg:text-2xl max-sm:text-lg">
           Durable Dumbbells
         </h1>
       </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
       </button>
       <div
         id="mobile-nav"
-        className={`text-xl w-40 h-screen fixed top-[70px] right-0 px-5 ${display} lg:hidden flex-col justify-start  bg-black bg-opacity-90 border-b border-white`}
+        className={`text-xl w-40 h-screen fixed top-[55px] right-0 px-5 ${display} lg:hidden flex-col justify-start bg-black bg-opacity-95 border-l border-white`}
       >
         <Link
           href={"#"}
