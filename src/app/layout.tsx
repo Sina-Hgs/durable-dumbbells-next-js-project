@@ -9,6 +9,7 @@ const BarlowCondensed = Barlow_Condensed({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   preload: true,
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,11 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-neutral-200 scroll-smooth">
-      <body className={`${BarlowCondensed.className}`}>
+    <html lang="en" className="h-full">
+      <body
+        className={`${BarlowCondensed.className} bg-neutral-200 scroll-smooth h-full`}
+      >
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
